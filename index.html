@@ -209,24 +209,24 @@
 
             <!-- Filtros de Categoria -->
             <div class="flex flex-wrap justify-center gap-4 mb-12" role="group" aria-label="Filtros de categoria">
-                <button class="bg-[#B8860B] text-black px-6 py-2 rounded-full hover:bg-[#DAA520] transition"
-                    aria-pressed="true">
+                <button data-filter="todos" 
+                        class="bg-[#B8860B] text-black px-6 py-2 rounded-full hover:bg-[#DAA520] transition">
                     Todos
                 </button>
-                <button
-                    class="bg-neutral-800 text-gray-300 px-6 py-2 rounded-full hover:bg-[#B8860B] hover:text-black transition">
+                <button data-filter="realismo"
+                        class="bg-neutral-800 text-gray-300 px-6 py-2 rounded-full hover:bg-[#B8860B] hover:text-black transition">
                     Realismo
                 </button>
-                <button
-                    class="bg-neutral-800 text-gray-300 px-6 py-2 rounded-full hover:bg-[#B8860B] hover:text-black transition">
+                <button data-filter="old-school"
+                        class="bg-neutral-800 text-gray-300 px-6 py-2 rounded-full hover:bg-[#B8860B] hover:text-black transition">
                     Old School
                 </button>
-                <button
-                    class="bg-neutral-800 text-gray-300 px-6 py-2 rounded-full hover:bg-[#B8860B] hover:text-black transition">
+                <button data-filter="blackwork"
+                        class="bg-neutral-800 text-gray-300 px-6 py-2 rounded-full hover:bg-[#B8860B] hover:text-black transition">
                     Blackwork
                 </button>
-                <button
-                    class="bg-neutral-800 text-gray-300 px-6 py-2 rounded-full hover:bg-[#B8860B] hover:text-black transition">
+                <button data-filter="oriental"
+                        class="bg-neutral-800 text-gray-300 px-6 py-2 rounded-full hover:bg-[#B8860B] hover:text-black transition">
                     Oriental
                 </button>
             </div>
@@ -234,7 +234,8 @@
             <!-- Grid de Imagens -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Item 1 -->
-                <div class="group relative overflow-hidden rounded-xl bg-gray-800">
+                <div class="portfolio-item group relative overflow-hidden rounded-xl bg-gray-800" 
+                     data-category="realismo">
                     <img src="img/realista.webp" alt="Tatuagem Realista"
                         class="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500"
                         loading="lazy" width="400" height="320">
@@ -257,7 +258,8 @@
                 </div>
 
                 <!-- Item 2 -->
-                <div class="group relative overflow-hidden rounded-xl bg-gray-800">
+                <div class="portfolio-item group relative overflow-hidden rounded-xl bg-gray-800" 
+                     data-category="old-school">
                     <img src="img/ancora.jpg" alt="Tatuagem Old School"
                         class="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500">
                     <div
@@ -279,7 +281,8 @@
                 </div>
 
                 <!-- Item 3 -->
-                <div class="group relative overflow-hidden rounded-xl bg-gray-800">
+                <div class="portfolio-item group relative overflow-hidden rounded-xl bg-gray-800" 
+                     data-category="blackwork">
                     <img src="img/geometria.jpg" alt="Tatuagem Blackwork"
                         class="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500">
                     <div
@@ -301,7 +304,8 @@
                 </div>
 
                 <!-- Item 4 -->
-                <div class="group relative overflow-hidden rounded-xl bg-gray-800">
+                <div class="portfolio-item group relative overflow-hidden rounded-xl bg-gray-800" 
+                     data-category="oriental">
                     <img src="img/Dragão Japonês.jpg" alt="Tatuagem Oriental"
                         class="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500">
                     <div
@@ -323,7 +327,8 @@
                 </div>
 
                 <!-- Item 5 -->
-                <div class="group relative overflow-hidden rounded-xl bg-gray-800">
+                <div class="portfolio-item group relative overflow-hidden rounded-xl bg-gray-800" 
+                     data-category="realismo">
                     <img src="img/Retrato realista.jpg" alt="Tatuagem Realista"
                         class="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500">
                     <div
@@ -345,7 +350,8 @@
                 </div>
 
                 <!-- Item 6 -->
-                <div class="group relative overflow-hidden rounded-xl bg-gray-800">
+                <div class="portfolio-item group relative overflow-hidden rounded-xl bg-gray-800" 
+                     data-category="old-school">
                     <img src="img/rosa-old-schoo.jpg" alt="Tatuagem Old School"
                         class="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500">
                     <div
@@ -732,6 +738,7 @@
     </div>
 
     <script src="js/menu.js"></script>
+    <script src="js/portfolio.js"></script>
 </body>
 
 </html>
