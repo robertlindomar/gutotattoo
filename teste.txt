@@ -1,0 +1,11 @@
+Cores principais:
+- Dourado principal: #B8860B (DarkGoldenrod)
+- Dourado claro: #DAA520 (GoldenRod) 
+- Dourado mais claro: #FFD700 (Gold)
+- Preto: #000000
+- Cinza escuro: #1F2937
+- Cinza claro: #9CA3AF
+
+Gradientes:
+- bg-gradient-to-r from-[#B8860B] to-[#DAA520]
+- bg-gradient-to-t from-black/90 via-[#B8860B]/10 to-transparent
